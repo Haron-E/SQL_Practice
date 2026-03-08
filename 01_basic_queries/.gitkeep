@@ -1,0 +1,28 @@
+01 - Sample Test Query:
+SELECT 
+    42 AS magic_number,
+    'Hello from DBeaver!' AS greeting,
+    CURRENT_DATE AS today,
+    CURRENT_TIMESTAMP AS right_now;
+
+02 - Creation nand Insertion into a Table:
+create table Aloha(
+	Employee_Id serial primary key,
+	Name varchar(50),
+	Age int,
+	Gender varchar(10),
+	Email varchar(50),
+	position varchar(15),
+	Branch_Location varchar(20)
+);
+
+insert into Aloha(name, age, gender, email, position, branch_location)
+values
+('Jamil', 50, 'Male', 'jk123@gmail.com','Director', 'Everywhere'),
+('Berkan', 45,'Male', 'bk123@gmail.com', 'General Manager', 'Kensal Rise'),
+('Zeeshan', 26, 'Male', 'zk345@gmail.com', 'Branch Manager', 'Cambridge'),
+('Haron', 22, 'Male', 'he345@gmail.com', 'Branch Manager', 'Manchester'),
+('Waqar', 35, 'Male', 'ws567@gmail.com','Branch Manager','Bristol');
+
+select * from Aloha;
+
